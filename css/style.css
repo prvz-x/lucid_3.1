@@ -1,0 +1,670 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    min-height: 100vh;
+    background-image: url("../images/banner_header.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: rgba(40, 40, 51, 0.02);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.navbar-brand img {
+    margin-bottom: 6px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    padding: 0px;
+    margin-left: 10px;
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    position: relative;
+    color: rgb(255, 255, 255) !important;
+}
+
+.navbar-light .navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::before {
+    width: 48%;
+    background: rgb(0, 142, 214);
+}
+
+.navbar-light .navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::after {
+    width: 48%;
+    background: rgb(0, 142, 214);
+}
+
+.height_bg {
+    min-height: 90vh;
+    align-items: center;
+}
+
+header h6 {
+    font-family: "Source Sans Pro";
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(0, 142, 214);
+    text-transform: uppercase;
+}
+
+header h1 {
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    font-size: 55px;
+    color: rgb(255, 255, 255);
+    margin: 15px auto;
+}
+
+header p {
+    font-family: "Source Sans Pro";
+    font-weight: 700;
+    font-size: 19px;
+    margin-bottom: 30px;
+    color: rgb(153, 153, 153) !important;
+}
+
+.btn_x {
+    font-family: "Source Sans Pro";
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    background: rgb(0, 142, 214);
+    border: 1px solid rgb(0, 142, 214);
+    border-radius: 3px;
+    color: rgb(255, 255, 255) !important;
+}
+
+.btn_x:hover {
+    background: transparent;
+}
+
+.btn_y {
+    font-family: "Source Sans Pro";
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid rgb(0, 142, 214);
+    border-radius: 3px;
+    color: rgb(255, 255, 255) !important;
+}
+
+.btn_y:hover {
+    background: rgb(0, 142, 214);
+}
+
+.header_pic img {
+    position: absolute;
+    left: 54%;
+    bottom: 0px;
+}
+
+.features h6 {
+    font-family: "Source Sans Pro";
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(0, 142, 214);
+    text-transform: uppercase;
+}
+
+.features h1 {
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    color: rgb(26, 26, 26);
+    margin: 3px auto 16px;
+}
+
+.features span {
+    display: block;
+    width: 70px;
+    height: 2px;
+    margin: auto;
+    position: relative;
+}
+
+.features span::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 0%;
+    height: 100%;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.features:hover span::before {
+    width: 48%;
+    background: rgb(0, 142, 214);
+}
+
+.features span::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 0%;
+    height: 100%;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.features:hover span::after {
+    width: 48%;
+    background: rgb(0, 142, 214);
+}
+
+.features_icon {
+    width: 70px;
+    height: 70px;
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features_icon a {
+    font-size: 25px;
+    color: rgb(0, 142, 214) !important;
+}
+
+.features h3 {
+    font-family: "Source Sans Pro";
+    font-weight: 400;
+    color: rgb(26, 26, 26);
+    margin: 10px auto;
+}
+
+.features p {
+    font-family: "Source Sans Pro";
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(153, 153, 153);
+}
+
+.beautiful-text h6 {
+    font-family: "Source Sans Pro";
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(0, 142, 214);
+    text-transform: uppercase;
+}
+
+.beautiful-text h1 {
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    color: rgb(26, 26, 26);
+    margin: 15px auto;
+}
+
+.beautiful-text span {
+    display: block;
+    width: 70px;
+    height: 2px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.beautiful-text span::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: rgb(0, 142, 214);
+    width: 0%;
+    height: 100%;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.beautiful:hover .beautiful-text span::before {
+    width: 48%;
+}
+
+.beautiful-text span::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background: rgb(0, 142, 214);
+    width: 0%;
+    height: 100%;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.beautiful:hover .beautiful-text span::after {
+    width: 48%;
+}
+
+.beautiful-text p {
+    font-family: "Source Sans Pro";
+    font-weight: 400;
+    font-size: 21px;
+    color: rgb(153, 153, 153);
+    margin-bottom: 30px;
+}
+
+.beautiful_x ul {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.beautiful_x ul li {
+    list-style: none;
+}
+
+.beautiful_x ul li a {
+    margin: 0px 15px 0px 0px;
+    width: 20px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.beautiful_x ul li h5 {
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(26, 26, 26);
+}
+
+.super-x {
+    background: rgb(242, 242, 242);
+}
+
+.beautiful-text span {
+    display: block;
+    width: 70px;
+    height: 2px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.beautiful-text span::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: rgb(0, 142, 214);
+    width: 0%;
+    height: 100%;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.super-x:hover .beautiful-text span::before {
+    width: 48%;
+}
+
+.beautiful-text span::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background: rgb(0, 142, 214);
+    width: 0%;
+    height: 100%;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.super-x:hover .beautiful-text span::after {
+    width: 48%;
+}
+
+.testimonial {
+    min-height: 87vh;
+    background-image: url("../images/banner_center.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.testimonial::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: rgba(33, 37, 41, 0.25);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.testimonial_text h6 {
+    font-family: "Source Sans Pro";
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(0, 142, 214);
+    text-transform: uppercase;
+}
+
+.testimonial_text h1 {
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    color: rgb(153, 153, 153);
+    margin: 15px auto 25px;
+}
+
+.testimonial_text span {
+    display: block;
+    width: 70px;
+    height: 2px;
+    margin: auto;
+    position: relative;
+}
+
+.testimonial_text span::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background: rgb(0, 142, 214);
+    width: 0px;
+    height: 100%;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.testimonial:hover .testimonial_text span::before {
+    width: 48%;
+}
+
+.testimonial_text span::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background: rgb(0, 142, 214);
+    width: 0px;
+    height: 100%;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.testimonial:hover .testimonial_text span::after {
+    width: 48%;
+}
+
+.testimonials p {
+    font-family: "Source Sans Pro";
+    font-style: italic;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.owl-dots{
+    text-align: center;
+}
+
+.owl-dots .owl-dot span{
+    display: block;
+    width: 7px;
+    height: 7px;
+    margin: 42px 7px;
+    border: 1px solid rgb(0, 142, 214);
+    border-radius: 50%;
+}
+
+.owl-dots .active span{
+    background: rgb(0, 142, 214);;
+}
+
+.slider_one{
+    position: relative;
+}
+
+.slider_one .owl-nav .owl-prev{
+    position: absolute;
+    left: -70px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px !important;
+    color: rgb(0, 142, 214) !important;
+}
+
+.slider_one .owl-nav .owl-next{
+    position: absolute;
+    right: -70px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px !important;
+    color: rgb(0, 142, 214) !important;
+}
+
+.client_pic {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.client_det p {
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(153, 153, 153);
+}
+
+.client_det h5 {
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    color: rgb(153, 153, 153);
+}
+
+.great_theme {
+    background: rgb(21, 20, 26);
+}
+
+.text_1 p {
+    font-family: "Source Sans Pro";
+    font-weight: 300;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+}
+
+.text_1 span {
+    font-family: "Source Sans Pro";
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.pricing_box {
+    border: 1px solid rgb(153, 153, 153);
+}
+
+.pricing_box h3 {
+    border-bottom: 1px solid rgb(153, 153, 153);
+    padding: 12px 0px;
+    margin: 0px;
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    font-size: 25px;
+    color: rgb(26, 26, 26);
+}
+
+.pricing_box:hover h3 {
+    color: rgb(0, 142, 214);
+}
+
+.pricing_box p {
+    padding: 36px 16px;
+    font-family: "Source Sans Pro";
+    font-weight: 400;
+    font-size: 19px;
+    color: rgb(153, 153, 153);
+}
+
+.pricing_box a {
+    text-decoration: none;
+}
+
+.pricing {
+    border-bottom: 1px solid rgb(153, 153, 153);
+    padding: 20px 0px;
+}
+
+.pricing_box:hover .pricing {
+    background: rgb(0, 142, 214);
+    color: rgb(255, 255, 255);
+}
+
+.pricing h2 {
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.pricing sup {
+    font-family: "Source Sans Pro";
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.pricing h5 {
+    margin-top: 10px;
+    font-family: "Source Sans Pro";
+    font-weight: 400;
+    font-size: 22px;
+    color: rgb(153, 153, 153);
+}
+
+.pricing_box:hover .pricing h5 {
+    color: rgb(255, 255, 255);
+}
+
+.btn_z {
+    padding: 6px 16px;
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    font-size: 16px;
+    color: rgb(0, 142, 214);
+    background: transparent;
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 3px;
+}
+
+.pricing_box:hover .btn_z {
+    background: rgb(0, 142, 214);
+    color: rgb(255, 255, 255);
+}
+
+.contact_us {
+    background: rgb(237, 237, 237);
+    padding-bottom: 350px;
+    position: relative;
+}
+
+.contact_icon {
+    margin-bottom: 16px;
+    font-size: 40px;
+    color: rgb(0, 142, 214);
+}
+
+.contact_form {
+    width: 50%;
+    background: rgb(21, 20, 26);
+    border-radius: 5px;
+    position: absolute;
+    bottom: -55px;
+}
+
+.contact_form input {
+    padding: 8px;
+    border: 1px solid rgb(153, 153, 153);
+    box-shadow: none;
+    background: transparent !important;
+}
+
+.contact_form textarea {
+    border: 1px solid rgb(153, 153, 153);
+    background: transparent !important;
+}
+
+.contact_form input[type="submit"] {
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 3px;
+    background: rgb(0, 142, 214) !important;
+}
+
+.contact_form input::placeholder .contact_form textarea {
+    font-family: "Source Sans Pro";
+    font-weight: 400;
+    color: rgb(153, 153, 153);
+}
+
+footer {
+    background: rgb(21, 20, 26);
+}
+
+.footer_icon {
+    width: 25%;
+    margin: auto;
+}
+
+.footer_icon ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_icon ul li {
+    list-style: none;
+}
+
+.footer_icon ul li a {
+    font-size: 22px;
+    color: rgb(153, 153, 153);
+}
+
+.footer_icon ul li a:hover {
+    color: rgb(0, 142, 214);
+}
+
+.footer_text {
+    text-transform: uppercase;
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(153, 153, 153);
+    margin-top: 10px;
+}
